@@ -58,7 +58,7 @@ Additional considerations:
 - on load:
   - go fetch all this user's past polls
   - display them
-- On click "Vote" bottons:
+- On click "Vote" buttons:
   - increment the state of the vote for that option
   - then display the change
 - On submit add question and options button:

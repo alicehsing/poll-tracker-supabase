@@ -23,9 +23,9 @@
         <button id="logout">Logout</button>
         <div class="top">
             <div class="left">
-                <form>
+                <form id="poll-form">
                     <label> Question:
-                        <input name="poll-question">
+                        <input class="question" name="poll-question">
                     </label>
                     <label> Option A:
                         <input name="poll-option-a">
@@ -39,22 +39,22 @@
             <div class="right">
                 <div class="poll-display">
                     <h3>Current Poll</h3>
-                    <p id="poll-question"></p>
+                    <p id="poll-question">Default Question</p>
                     <div class="options">
                         <div id="option-a">
-                        <p id="option-a-title"></p>
-                        <p id="option-a-votes"></p>
+                        <p id="option-a-title">Default Option A</p>
+                        <p id="option-a-votes">0</p>
                         </div>
                         <div id="option-b">
-                        <p id="option-b-title"></p>
-                        <p id="option-b-votes"></p>
+                        <p id="option-b-title">Default Option B</p>
+                        <p id="option-b-votes">0</p>
                         </div>
                     </div>
                 </div>
                 <div class="vote-options">
                     <div>
-                        <button id="option-a-add">Vote Option A</button>
-                        <button id="option-b-add">Vote Option B</button>
+                        <button id="option-a-vote">Vote Option A</button>
+                        <button id="option-b-vote">Vote Option B</button>
                     </div>
                 </div>           
             </div>        
@@ -62,7 +62,7 @@
         <button id="close-poll">Close Poll</button><br>
         <h3>Past Polls</h3>
         <div class="bottom">
-            <div id="past-poll-display"> 
+            <div class="past-poll-display"> 
                     <div id="past-polls"></div>
             </div>
                 

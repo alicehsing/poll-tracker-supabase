@@ -15,7 +15,6 @@ export function checkLoggedIn() {
 
 export async function logout() {
     await client.auth.signOut();
-
     return window.location.href = '../';
 }
 
@@ -38,16 +37,16 @@ export async function signIn(realEmail, realPassword){
     return response.data;
 }
 
-export async function savePoll(question, option1, option2, votes1, votes2) {
+export async function createPoll(question, optionA, optionB, votesA, votesB) {
     const response = await client
         .from('polls')
         .insert([
             {   
-                question,
-                option_a: option1,
-                option_b: option2,
-                vote_a: votes1,
-                vote_b: votes2,
+                question: question,
+                option_a: optionA,
+                option_b: optionB,
+                vote_a: votesA,
+                vote_b: votesB,
             },
         ]);
 
@@ -60,6 +59,7 @@ export async function getPolls() {
         .select();
 
     return response.data;
+    // return client.auth.session();
 }
 
 export async function redirectToPolls() {

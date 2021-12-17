@@ -13,7 +13,7 @@ const renderObject = {
 test('renderPoll function should create 5 p tags and a div element, then append all p to div', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = `<div class="poll"><p>What is your favorite day of the week?</p><p>Friday</p><p>6</p><p>Saturday</p><p>10</p></div>`;
+    const expected = `<div class="poll"><p>What is your favorite day of the week?</p><p class="past-option-a">Friday</p><p class="past-votes-a">6</p><p class="past-option-b">Saturday</p><p class="past-votes-b">10</p></div>`;
     
     //Act 
     // Call the function you're testing and set the result to a const

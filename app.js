@@ -6,7 +6,7 @@ const signUpForm = document.getElementById('sign-up');
 const signInForm = document.getElementById('sign-in');
 
 // if user is current logged in, redirect to poll.js
-// redirectToPolls();
+redirectToPolls();
 
 signUpForm.addEventListener('submit', async(event) => {
     event.preventDefault();

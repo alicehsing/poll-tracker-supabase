@@ -11,10 +11,10 @@ export function renderPoll(poll) {
     newQuestionEl.textContent = poll.question;
     newOptionOneEl.textContent = poll.option_a;
     newOptionTwoEl.textContent = poll.option_b;
-    newVotesOneEl.textContent = poll.votes_a;
-    newVotesTwoEl.textContent = poll.votes_b;
+    newVotesOneEl.textContent = poll.vote_a;
+    newVotesTwoEl.textContent = poll.vote_b;
 
-    pastPollEl.append(newQuestionEl, newOptionOneEl, newOptionTwoEl, newVotesOneEl, newVotesTwoEl);
+    pastPollEl.append(newQuestionEl, newOptionOneEl, newVotesOneEl, newOptionTwoEl, newVotesTwoEl);
 
     return pastPollEl;
 }

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/home.css">
+    <title>Poll Tracker</title>
+</head>
+
+<body>
+    <header>
+        <div class="gutter-right logo">
+            <img src="../assets/big-logo.png" />
+        </div>
+    </header>
+    <main>
+        <button id="logout">Logout</button>
+        <div class="top">
+            <div class="left">
+                <form id="poll-form">
+                    Generate a poll with a question and 2 vote options.
+                    <label> Question:
+                        <input class="question" name="poll-question">
+                    </label>
+                    <label> Option A:
+                        <input name="poll-option-a">
+                    </label>
+                    <label> Option B:
+                        <input name="poll-option-b">
+                    </label>
+                    <button id="start-poll">Create Poll</button>
+                </form>
+            </div>
+            <div class="right">
+                <div class="poll-display">
+                    <h3>Current Poll</h3>
+                    <p id="poll-question">Default Question</p>
+                    <div class="options">
+                        <div id="option-a">
+                        <p id="option-a-title">Default Option A</p>
+                        <p id="option-a-votes">0</p>
+                        </div>
+                        <div id="option-b">
+                        <p id="option-b-title">Default Option B</p>
+                        <p id="option-b-votes">0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="vote-options">
+                    <div>
+                        <button id="option-a-vote">Vote Option A</button>
+                        <button id="option-b-vote">Vote Option B</button>
+                    </div>
+                </div>           
+            </div>        
+        </div>    
+        <button id="close-poll">Close Poll</button><br>
+        <h3>Past Polls</h3>
+        <div class="bottom">
+            <div class="past-poll-display"> 
+                    <div id="past-polls"></div>
+            </div>
+                
+        </div>
+
+    </main>
+    <footer>
+        <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
+    </footer>
+
+    <script type="module" src="./polls.js"></script>
+</body>
+
+</html>

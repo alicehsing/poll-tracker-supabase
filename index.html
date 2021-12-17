@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
-    <title>Poll Tracker</title>
+    <title>Sign In to Poll Tracker </title>
 </head>
 
 <body>
@@ -18,9 +18,38 @@
         <div class="gutter-right logo">
             <img src="./assets/big-logo.png" />
         </div>
-    </header>
-    <main>
-        
+    </header> 
+    <main class="auth-main">
+        <h2>Poll Tracker Login</h2>
+        <div class="left">
+            <div class="auth-container">
+                <form id="sign-in">
+                    <h3>Existing Users: Sign In</h3>
+                    <label>Email
+                        <input type="email" name="email">
+                    </label>
+                    <label>Password
+                        <input type="password" name="password">
+                    </label>
+                    <button>Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="right">
+            <div class="auth-container">
+                <form id="sign-up">
+                    <h3>New Users: Sign Up</h3>
+                    <label>Email
+                        <input type="email" name="email">
+                    </label>
+                    <label>Password
+                        <input type="password" name="password">
+                    </label>
+                    <button>Submit</button>
+                </form>
+               
+            </div>
+        </div>
     </main>
     <footer>
         <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>

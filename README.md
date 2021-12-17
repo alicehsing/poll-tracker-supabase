@@ -47,9 +47,11 @@ Additional considerations:
 - 1 button for "vote option a"💥💥💥 Add event listener to increment the vote count for option A in the current poll
 - 1 button for "vote option b"💥💥💥 Add event listener to increment the vote count for option B in the current poll
 
-4)1 button for "Finish Poll" 💥💥💥 Append the current poll to the past polls state in supabase ("Update the list"): clear DOM of the list -> Use a for loop to loop through all past polls, create some DOM and display each past poll in the list -> Clear out/reset current poll state and DOM.
+4)1 button for "Close Poll" 💥💥💥 Append the current poll to the past polls state in supabase ("Update the list"): clear DOM of the list -> Use a for loop to loop through all past polls, create some DOM and display each past poll in the list -> Clear out/reset current poll state and DOM.
 
 5)an empty div for injecting/appending "Past Poll" info
+
+6)a button for "logout"
 
 ## Events
 
@@ -61,7 +63,7 @@ Additional considerations:
   - then display the change
 - On submit add question and options button:
   - grab the DOM for the current poll, then inject the question and options into those DOM elements
-- On click of "Finish Poll" button:
+- On click of "Close Poll" button:
   - Take the current poll state and add it to past polls IN SUPABASE!!!
   - Re-fetch the polls from supabase and redisplay the list (clear the list in the DOM, render, and append)
 

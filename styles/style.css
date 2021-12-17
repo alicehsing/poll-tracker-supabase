@@ -37,6 +37,7 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+    height: 100%
 }
 
 section {
@@ -88,4 +89,43 @@ footer {
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px black;
+    margin: 20px;
+    width: 400px;
+    height: 250px;
+    /* background-color: #bee3db; */
+
+}
+.auth-main {
+    flex-direction: row;
+}
+
+.auth-main label, .auth-main button {
+    display: block
+}
+
+label {
+    margin: 10px;;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form button {
+    background-color: #faf9f9;
+    width: 100px;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
 }

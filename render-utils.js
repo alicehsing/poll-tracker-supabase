@@ -8,6 +8,10 @@ export function renderPoll(poll) {
     const newVotesTwoEl = document.createElement('p');
 
     pastPollEl.classList.add('poll');
+    newOptionOneEl.classList.add('past-option-a');
+    newOptionTwoEl.classList.add('past-option-b');
+    newVotesOneEl.classList.add('past-votes-a');
+    newVotesTwoEl.classList.add('past-votes-b');
     newQuestionEl.textContent = poll.question;
     newOptionOneEl.textContent = poll.option_a;
     newOptionTwoEl.textContent = poll.option_b;
